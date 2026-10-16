@@ -7,7 +7,7 @@
 <p align="center"><em>An Agent Skill that makes the model fetch, read and cite — instead of answering from memory.</em></p>
 
 <p align="center">
-  <a href="https://skills.sh/samasarvii/literature-review"><img src="https://skills.sh/b/samasarvii/literature-review" alt="skills.sh"></a>
+  <a href="https://agentskills.io"><img src="https://img.shields.io/badge/Agent%20Skills-SKILL.md-2B5C9E" alt="Agent Skills"></a>
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="license">
   <img src="https://img.shields.io/badge/works%20with-Claude%20Code%20%C2%B7%20Codex%20%C2%B7%20Cursor%20%C2%B7%20Gemini%20CLI%20%C2%B7%20Copilot-1A2B4A" alt="works with">
 </p>
