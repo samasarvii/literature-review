@@ -1,12 +1,23 @@
-# literature-review
+<p align="center">
+  <img src="assets/mascot.svg" width="560" alt="A small pixel character stamps a source card READ; snippet cards go in the bin.">
+</p>
 
-[![skills.sh](https://skills.sh/b/samasarvii/literature-review)](https://skills.sh/samasarvii/literature-review)
-![license](https://img.shields.io/badge/license-MIT-blue)
+<h1 align="center">literature-review</h1>
 
-An [Agent Skill](https://agentskills.io) that turns *"what is the best
-practice for X?"* into a cited literature review instead of an answer from
-memory. Works in Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot and
-any other agent that reads the `SKILL.md` format.
+<p align="center"><em>An Agent Skill that makes the model fetch, read and cite — instead of answering from memory.</em></p>
+
+<p align="center">
+  <a href="https://skills.sh/samasarvii/literature-review"><img src="https://skills.sh/b/samasarvii/literature-review" alt="skills.sh"></a>
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="license">
+  <img src="https://img.shields.io/badge/works%20with-Claude%20Code%20%C2%B7%20Codex%20%C2%B7%20Cursor%20%C2%B7%20Gemini%20CLI%20%C2%B7%20Copilot-1A2B4A" alt="works with">
+</p>
+
+Ask *"what is the best practice for X?"* and get a cited literature
+review back: a sources table where every row was actually fetched and read,
+findings sorted into consensus / disagreement / open, and a recommendation
+whose confidence is derived from the evidence rather than from how sure the
+prose sounds. One [`SKILL.md`](skills/literature-review/SKILL.md); works in
+any agent that reads the Agent Skills format.
 
 Most research skills optimise for *more sources*. This one optimises for
 *a decision*: it ranks sources on a four-rung ladder (papers and specs
@@ -55,9 +66,13 @@ Given a question, the agent:
    practitioners third; forums only as leads to follow back to the original.
    Every source is fetched and read before it can be cited; a search snippet
    is a lead, not a citation. Breadth is capped per sub-question.
+
+   <img src="assets/ladder.svg" width="560" alt="Source ladder: four rungs; forums are leads only.">
 3. **Extracts a claim card** per finding, with the evidence type
    (experiment, measurement, production experience, specification, or
    opinion) and a verbatim quote the final check looks for on the page.
+
+   <img src="assets/card.svg" width="560" alt="A claim card with Claim, Evidence, Source, Context and Quote lines.">
 4. **Sorts** findings into *consensus / disagreement / open*, and labels
    what everyone repeats but nobody can source as folklore.
 5. **Recommends** for *your* context, with a confidence level derived from
@@ -135,6 +150,7 @@ agents/claim-card-collector.md                    subagent definition for per-su
 skills/literature-review/evals/evals.json         prompts + assertions for skill-creator / `claude plugin eval`
 skills/literature-review/evals/files/CLAUDE.md    fixture for the "tensions with settled rules" eval
 examples/                                         reports this skill produced
+assets/                                           README illustrations (SVG)
 .claude-plugin/                                   makes the repo a Claude Code plugin + marketplace
 ```
 

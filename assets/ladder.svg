@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="200" viewBox="0 0 56 20" role="img" aria-label="Source ladder: four rungs, forums are leads only">
+  <style>.t{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.s{font-family:ui-serif,Georgia,serif}</style>
+  <rect width="56" height="20" rx="2" fill="#F4F1E8"/>
+  <rect x="2" y="1.5" width="52" height="3.6" rx="1" fill="#1A2B4A"/><text class="s" x="4" y="4.1" font-size="2.2" fill="#9FC2E8">1</text><text class="t" x="7" y="3.9" font-size="1.35" fill="#F4F1E8">papers · RFCs · official docs · code</text><text class="t" x="52.5" y="3.9" font-size="1.1" fill="#B9D0EA" text-anchor="end">evidence</text>
+  <rect x="2" y="5.7" width="47" height="3.6" rx="1" fill="#243A60"/><text class="s" x="4" y="8.3" font-size="2.2" fill="#9FC2E8">2</text><text class="t" x="7" y="8.1" font-size="1.35" fill="#F4F1E8">engineering blogs · postmortems</text><text class="t" x="47.5" y="8.1" font-size="1.1" fill="#B9D0EA" text-anchor="end">experience</text>
+  <rect x="2" y="9.9" width="42" height="3.6" rx="1" fill="#3A5280"/><text class="s" x="4" y="12.5" font-size="2.2" fill="#CFE0F4">3</text><text class="t" x="7" y="12.3" font-size="1.35" fill="#F4F1E8">practitioners · cited books</text><text class="t" x="42.5" y="12.3" font-size="1.1" fill="#CFE0F4" text-anchor="end">opinion</text>
+  <rect x="2" y="14.1" width="37" height="3.6" rx="1" fill="#F4F1E8" stroke="#7F9BC4" stroke-width=".25" stroke-dasharray=".6 .4"/><text class="s" x="4" y="16.7" font-size="2.2" fill="#7F9BC4">4</text><text class="t" x="7" y="16.5" font-size="1.35" fill="#4F5F78">forums · Q&amp;A · aggregators</text><text class="t" x="37.5" y="16.5" font-size="1.1" fill="#C2577A" text-anchor="end">leads only</text>
+</svg>

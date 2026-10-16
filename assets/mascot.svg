@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 56 30" shape-rendering="crispEdges" role="img" aria-label="A small green pixel character with a pink bow stamps a source card READ; snippet cards sit in the bin">
+  <style>
+    @keyframes bob { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-.6px) } }
+    @keyframes stamp { 0%,55%,100% { transform: translate(0,0) } 65% { transform: translate(0,3.2px) } 72% { transform: translate(0,3.2px) } 80% { transform: translate(0,0) } }
+    @keyframes ink { 0%,70% { opacity: 0 } 74%,100% { opacity: 1 } }
+    @keyframes bow { 0%,100% { transform: rotate(0deg) } 50% { transform: rotate(-6deg) } }
+    @keyframes blink { 0%,92%,100% { transform: scaleY(1) } 95% { transform: scaleY(.1) } }
+    .body { animation: bob 2.4s ease-in-out infinite; }
+    .arm { animation: stamp 3.6s ease-in-out infinite; transform-origin: 0 0; }
+    .ink { animation: ink 3.6s linear infinite; }
+    .bow { animation: bow 2.4s ease-in-out infinite; transform-origin: 25px 2px; }
+    .eyes { animation: blink 4.8s linear infinite; transform-origin: 20px 11px; }
+    .t { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D9EDE3"/><stop offset=".5" stop-color="#F4F1E8"/><stop offset="1" stop-color="#F6E4DF"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="30" rx="2" fill="url(#bg)"/>
+  <rect x="0" y="26" width="56" height="4" fill="#E6DED0"/>
+  <!-- desk -->
+  <rect x="4" y="18" width="40" height="2.4" fill="#8A6A3A"/><rect x="4" y="20.4" width="40" height=".5" fill="#6E5430"/>
+  <rect x="6" y="20.9" width="1.5" height="5.1" fill="#6E5430"/><rect x="40.5" y="20.9" width="1.5" height="5.1" fill="#6E5430"/>
+  <!-- lamp -->
+  <rect x="7.6" y="5" width=".6" height="13" fill="#1A2B4A"/><rect x="5" y="3.4" width="6" height="2.4" fill="#E5B86A"/><rect x="4" y="5.8" width="8" height="5" fill="#F7E9B8" opacity=".55"/>
+  <!-- unread stack -->
+  <g>
+    <rect x="9.5" y="15" width="7.5" height="3.6" fill="#FBF8F1" stroke="#1A2B4A" stroke-width=".25"/>
+    <rect x="9" y="14.2" width="7.5" height="3.6" fill="#FBF8F1" stroke="#1A2B4A" stroke-width=".25"/>
+    <rect x="8.5" y="13.4" width="7.5" height="3.6" fill="#FBF8F1" stroke="#1A2B4A" stroke-width=".25"/>
+    <rect x="9.3" y="14.3" width="4" height=".35" fill="#7F9BC4"/><rect x="9.3" y="15.1" width="5.4" height=".35" fill="#9FC2E8"/><rect x="9.3" y="15.9" width="3.2" height=".35" fill="#9FC2E8"/>
+  </g>
+  <!-- read card -->
+  <g>
+    <rect x="30" y="13.4" width="9.5" height="4.6" fill="#FBF8F1" stroke="#1A2B4A" stroke-width=".25"/>
+    <rect x="30.8" y="14.3" width="5" height=".35" fill="#7F9BC4"/><rect x="30.8" y="15.1" width="7" height=".35" fill="#9FC2E8"/>
+    <g class="ink">
+      <rect x="32.3" y="15.8" width="5.6" height="1.8" rx=".9" fill="#2E6B57"/>
+      <text class="t" x="35.1" y="17.15" font-size="1.2" font-weight="700" fill="#F4F1E8" text-anchor="middle">READ</text>
+    </g>
+  </g>
+  <!-- bin with snippets -->
+  <rect x="46" y="21.5" width="4.6" height="4.5" fill="#1A2B4A"/><rect x="46.6" y="22.1" width="3.4" height="3.3" fill="#243A60"/>
+  <g transform="rotate(-12 48.3 20.6)"><rect x="45.6" y="19.6" width="5.4" height="2" fill="#FBF8F1" stroke="#7F9BC4" stroke-width=".2"/><text class="t" x="48.3" y="21" font-size="1" fill="#C2577A" text-anchor="middle">snippet</text></g>
+  <g transform="rotate(14 47.6 23.2)"><rect x="44.9" y="22.2" width="5.4" height="2" fill="#FBF8F1" stroke="#7F9BC4" stroke-width=".2"/><text class="t" x="47.6" y="23.6" font-size="1" fill="#C2577A" text-anchor="middle">snippet</text></g>
+  <!-- mascot -->
+  <g class="body" transform="translate(16 3.2)">
+    <g class="bow"><rect x="7" y="0" width="2" height="2" fill="#E89AB0"/><rect x="10" y="0" width="2" height="2" fill="#E89AB0"/><rect x="9" y=".5" width="1" height="1" fill="#C2577A"/></g>
+    <rect x="4" y="1" width="6" height="1" fill="#8FCBAA"/><rect x="3" y="2" width="8" height="1" fill="#8FCBAA"/><rect x="2" y="3" width="10" height="7" fill="#8FCBAA"/><rect x="3" y="10" width="8" height="1" fill="#8FCBAA"/>
+    <rect x="3" y="11" width="2" height="1" fill="#8FCBAA"/><rect x="6" y="11" width="2" height="1" fill="#8FCBAA"/><rect x="9" y="11" width="2" height="1" fill="#8FCBAA"/>
+    <g class="eyes"><rect x="4" y="5" width="2" height="2" fill="#1B2A26"/><rect x="8" y="5" width="2" height="2" fill="#1B2A26"/><rect x="4" y="5" width="1" height="1" fill="#F4F1E8"/><rect x="8" y="5" width="1" height="1" fill="#F4F1E8"/></g>
+    <rect x="3" y="8" width="1" height="1" fill="#F2B8B0"/><rect x="10" y="8" width="1" height="1" fill="#F2B8B0"/><rect x="6" y="8" width="2" height=".6" fill="#2E6B57"/>
+    <g class="arm"><rect x="12" y="5" width="1.2" height="4.5" fill="#8A6A3A"/><rect x="11" y="9.5" width="3.2" height="1.4" fill="#C2577A"/></g>
+  </g>
+  <!-- caption pill -->
+  <rect x="18" y="22.2" width="20" height="2.8" rx="1.4" fill="#1A2B4A"/>
+  <text class="t" x="28" y="24.15" font-size="1.45" fill="#9FC2E8" text-anchor="middle">fetch → read → cite</text>
+</svg>

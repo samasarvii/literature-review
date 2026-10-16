@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="170" viewBox="0 0 56 17" role="img" aria-label="A claim card: Claim, Evidence, Source, Context, Quote">
+  <style>.t{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}</style>
+  <rect width="56" height="17" rx="2" fill="#F4F1E8"/>
+  <g transform="rotate(-1 28 8.5)">
+    <rect x="3.5" y="2.1" width="49" height="12.8" rx=".8" fill="#1A2B4A"/>
+    <rect x="3" y="1.6" width="49" height="12.8" rx=".8" fill="#FBF8F1" stroke="#1A2B4A" stroke-width=".25"/>
+    <text class="t" x="5" y="3.9" font-size="1.05" fill="#2B5C9E" letter-spacing=".15">CLAIM CARD · S7</text>
+    <line x1="5" y1="4.6" x2="50" y2="4.6" stroke="#9FC2E8" stroke-width=".25"/>
+    <text class="t" x="5" y="6.4" font-size="1.15" fill="#7F9BC4">Claim</text><text class="t" x="12" y="6.4" font-size="1.15" fill="#1B2A26">More searching → less supported claims</text>
+    <text class="t" x="5" y="8.3" font-size="1.15" fill="#7F9BC4">Evidence</text><rect x="11.6" y="7.25" width="26.5" height="1.5" rx=".4" fill="#E89AB0"/><text class="t" x="12" y="8.3" font-size="1.15" font-weight="700" fill="#1B2A26">experiment · 14 models · 2→150 calls · −42 pts</text>
+    <text class="t" x="5" y="10.2" font-size="1.15" fill="#7F9BC4">Source</text><text class="t" x="12" y="10.2" font-size="1.15" fill="#1B2A26">Onweller et al. 2026 · arXiv 2605.06635 · rung 1 · read</text>
+    <text class="t" x="5" y="12.1" font-size="1.15" fill="#7F9BC4">Context</text><text class="t" x="12" y="12.1" font-size="1.15" fill="#1B2A26">deep-research agents; single-turn search untested</text>
+    <text class="t" x="5" y="14" font-size="1.15" fill="#7F9BC4">Quote</text><text class="t" x="12" y="14" font-size="1.15" fill="#1B2A26" font-style="italic">"claim support drops as tool calls grow"</text>
+  </g>
+</svg>
