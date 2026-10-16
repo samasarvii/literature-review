@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/mascot.svg" width="560" alt="A small pixel character stamps a source card READ; snippet cards go in the bin.">
+  <img src="assets/mascot.svg" width="560" alt="A small pixel character researches at a laptop: search results scroll, a magnifying glass checks a paper, and the sources table fills in row by row.">
 </p>
 
 <h1 align="center">literature-review</h1>
