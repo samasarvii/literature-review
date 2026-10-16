@@ -1,0 +1,21 @@
+{
+  "name": "samasarvii",
+  "description": "Skills and plugins by samasarvii.",
+  "owner": {
+    "name": "samasarvii",
+    "url": "https://github.com/samasarvii"
+  },
+  "plugins": [
+    {
+      "name": "literature-review",
+      "source": "./",
+      "description": "Survey the literature on a topic, separate evidence-backed best practices from folklore, and write a cited report with a recommendation.",
+      "category": "research",
+      "tags": [
+        "research",
+        "citations",
+        "best-practices"
+      ]
+    }
+  ]
+}

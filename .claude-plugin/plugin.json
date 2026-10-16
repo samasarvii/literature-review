@@ -1,0 +1,21 @@
+{
+  "name": "literature-review",
+  "description": "Survey the literature on a topic, separate evidence-backed best practices from folklore, and write a cited report with a recommendation.",
+  "version": "0.3.0",
+  "author": {
+    "name": "samasarvii"
+  },
+  "homepage": "https://github.com/samasarvii/literature-review",
+  "repository": "https://github.com/samasarvii/literature-review",
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "literature-review",
+    "deep-research",
+    "best-practices",
+    "citations",
+    "evidence",
+    "decision-support"
+  ],
+  "displayName": "Literature Review"
+}

@@ -1,0 +1,70 @@
+{
+  "skill_name": "literature-review",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Bir FastAPI + Postgres backend'inde iş kuyruğunu tabloda FOR UPDATE SKIP LOCKED ile tutuyoruz, Redis yok. Bu yaklaşımın best practice'lerini ve nerede kırıldığını literatürden tara; worker sayısını artırırken nelere dikkat etmeliyiz?",
+      "expected_output": "A Markdown report under docs/research/ with a frame, per-sub-question findings separated into consensus / disagreement / open, a sources table with rungs and dates, and a recommendation with confidence and a 'what would change it' line. Reply to the user in Turkish with the recommendation and the path.",
+      "files": [],
+      "assertions": [
+        "A file matching docs/research/*.md was created (or, with no repo, the full report was returned)",
+        "The report has sections Frame, Summary, Findings, Recommendation, Sources",
+        "The sources table has at least 6 rows, each with a rung (1-4), a date and a read/abstract-only/not-fetched status",
+        "No row marked 'abstract only' or 'not fetched' is cited as support in Findings",
+        "At least one finding is labelled disagreement or open/thin, not only consensus",
+        "The recommendation names a confidence level and one fact that would change it",
+        "The chat reply is under 15 lines and contains the report path or link",
+        "The reply and report are in Turkish"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "what does the research say about chunking strategies for RAG over long enterprise documents (contracts, policies)? we use pgvector. want to know what the field has actually measured vs what people just repeat",
+      "expected_output": "Report distinguishes measured results (papers, benchmarks) from folklore, dates each source, flags older claims where the field has moved, and ends with a recommendation tied to pgvector and long documents.",
+      "files": [],
+      "assertions": [
+        "Each finding states whether it rests on a measurement/experiment or on opinion/experience",
+        "At least one widely repeated claim is labelled folklore or unverified",
+        "Every source row has a publication date; sources older than ~2 years are flagged if the field has moved",
+        "The recommendation mentions pgvector and long documents explicitly",
+        "No row marked 'abstract only' or 'not fetched' is cited as support in Findings"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "LLM ajanlarına araç verirken teyit (human-in-the-loop) ne zaman istenmeli, hangi araçlar riskli sayılmalı? En iyi pratikleri ve kaynaklarını topla, bizim kuralımızla çelişen bir şey varsa söyle.",
+      "expected_output": "Report reads CLAUDE.md for the project's settled confirmation rules, reports the field's practices with sources, and lists tensions with the settled rules explicitly instead of overriding them.",
+      "files": [
+        "evals/files/CLAUDE.md"
+      ],
+      "assertions": [
+        "The agent read CLAUDE.md before searching",
+        "The report has a Tensions line that names at least one rule from CLAUDE.md",
+        "The settled rule in CLAUDE.md is not overridden or rewritten as the recommendation",
+        "The sources table has rung and read status per row"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "what does Array.prototype.at(-1) return on an empty array?",
+      "expected_output": "A direct one-line answer (undefined). The literature-review skill must NOT be invoked and no report is written.",
+      "files": [],
+      "assertions": [
+        "The literature-review skill was not invoked",
+        "No file under docs/ was created",
+        "The reply answers in at most 3 sentences"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Is there any research yet on using MCP servers as the integration layer for internal enterprise tools? We are about to standardise on it; want to know what is actually known vs hype.",
+      "expected_output": "A report whose Open/thin bins dominate, confidence low, with the thinness stated plainly rather than padded with rung-4 sources.",
+      "files": [],
+      "assertions": [
+        "Confidence is reported as low with a one-line reason",
+        "At least one sub-question is marked open/thin",
+        "No forum or aggregator (rung 4) source is cited as support"
+      ]
+    }
+  ]
+}
